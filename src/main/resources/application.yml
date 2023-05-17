@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/telros-db
+    username: admin
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    user: admin
+    password: 1234
+    schemas: public
+    url: jdbc:postgresql://localhost:5432/telros-db
+    locations: filesystem:db/migration
